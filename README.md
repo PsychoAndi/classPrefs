@@ -52,17 +52,11 @@ All values are actually converted to string and stored in the preferences databa
 The get methods all return the value of the specified type from the preferences database. Keys are case insensitive and must exist in the database. If the key does not exists in the preferences database a KeyNotFoundException will be raised. To avoid this the HasKey method can be used prior to calling the get methods to check the existence of a key. Alternatively pass the optional default value to be returned if the key cannot be found, however, you will not be notified if the key was not found and the method will return correctly.
 
 #### getBooleanValue(key as String,Optional default as Boolean) as Boolean
-
 #### getDoubleValue(key as String,Optional default as Double) as Double
-
 #### getSingleValue(key as String,Optional default as Single) as Single
-
 #### getColorValue(key as String,Optional default as Color) as Color
-
 #### getIntegerValue(key as String,Optional default as Integer) as Integer
-
 #### getStringValue(key as String,Optional default as String) as String
-
 #### getPictureValue(key as String,Optional default as Picture) as Picture
 
 # Utility Methods
