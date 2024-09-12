@@ -36,7 +36,6 @@ All values are actually converted to string and stored in the preferences databa
 ####setDoubleValue(key as String, value as Double)
 
 ####setSingleValue(key as String, value as Single)
-
 ####setColorValue(key as String, value as Color)
 
 ####setIntegerValue(key as String, value as Integer)
