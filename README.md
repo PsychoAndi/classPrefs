@@ -1,7 +1,7 @@
 # classPrefs
 A preferences/settings class for XOJO
 
-This class is the same like classPreferences from CharlieXojo 
+This class is the same like classPreferences from CharlieXojo
 (from here: https://github.com/CharlieXojo/classPreferences)
 
 I modernized the code, all methods kept their names and functions, so I took the 
@@ -26,14 +26,13 @@ preferences file. It is useful for updating your application when a user has cha
 
 #Methods
 
-###Constructor(bundleID as String) The constructor's argument, bundleID, is the name which will be used for your preferences file. The preferences file, by default, will be written to SpecialFolder.ApplicationData and placed in a folder with the name of bundleID and the file will be named bundleID.preferences. It is therefore important that the bundleID argument contains a string which will be valid for use as a folder and a filename on your platform.
+###Constructor(bundleID as String) The constructor's argument, bundleID, is the name which will be used for your preferences file. The preferences file, by default, will be written to SpecialFolder.ApplicationData and placed in a folder with the name of bundleID and the file will be named bundleID.prefs. It is therefore important that the bundleID argument contains a string which will be valid for use as a folder and a filename on your platform.
 
 ##set Methods The set methods all set the value of the specified type to the preferences database. Keys are case insensitive but must be unique or the method will replace the existing value stored in the preferences database.
 
 All values are actually converted to string and stored in the preferences database as text and then converted back to their datatype when retrieved. This is transparent to you when coding.
 
 ####setBooleanValue(key as String, value as Boolean)
-
 ####setDoubleValue(key as String, value as Double)
 
 ####setSingleValue(key as String, value as Single)
