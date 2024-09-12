@@ -7,26 +7,25 @@ This class is the same like classPreferences from CharlieXojo
 I just modernized the code, all methods kept their names and functions, so I took the 
 Readme from him here.
 
-
 # Summary 
 classPrefs is a class to simply generate a preferences storage mechanism using an SQLite database. 
 
 Calling the constructor with:
 
-## Var Prefs As New classPrefs([bundleID])
+#### Var Prefs As New classPrefs([bundleID])
 
 will create the database file if it does not exist already. Once the file is created, simply use the 
 get and set methods outlined below to store and retrieve your applications settings.
 
 # Events 
 
-## PreferencesChanged 
+#### PreferencesChanged 
 PreferencesChanged is raised each time one of the set methods has successfully written a value to the 
 preferences file. It is useful for updating your application when a user has changed one of their preferences.
 
 # Methods
 
-### Constructor(bundleID as String) 
+#### Constructor(bundleID as String) 
 The constructor's argument, bundleID, is the name which will be used for your preferences file. The preferences file, by default, will be written to SpecialFolder.ApplicationData and placed in a folder with the name of bundleID and the file will be named bundleID.prefs. It is therefore important that the bundleID argument contains a string which will be valid for use as a folder and a filename on your platform.
 
 ### set Methods 
@@ -35,17 +34,11 @@ The set methods all set the value of the specified type to the preferences datab
 All values are actually converted to string and stored in the preferences database as text and then converted back to their datatype when retrieved. This is transparent to you when coding.
 
 #### setBooleanValue(key as String, value as Boolean)
-
 #### setDoubleValue(key as String, value as Double)
-
 #### setSingleValue(key as String, value as Single)
-
 #### setColorValue(key as String, value as Color)
-
 #### setIntegerValue(key as String, value as Integer)
-
 #### setStringValue(key as String, value as String)
-
 #### setPictureValue(key as String, value as Picture)
 
 ### get Methods 
