@@ -4,15 +4,14 @@ A preferences/settings class for XOJO
 This class is the same like classPreferences from CharlieXojo
 (from here: https://github.com/CharlieXojo/classPreferences)
 
-I just modernized the code, all methods kept their names and functions, so I took the 
-Readme from him here.
+I just modernized the code, all methods kept their names and functions, so I also copied his Readme.
 
 # Summary 
 classPrefs is a class to simply generate a preferences storage mechanism using an SQLite database. 
 
 Calling the constructor with:
 
-#### Var Prefs As New classPrefs([bundleID])
+  #### Var Prefs As New classPrefs([bundleID])
 
 will create the database file if it does not exist already. Once the file is created, simply use the 
 get and set methods outlined below to store and retrieve your applications settings.
