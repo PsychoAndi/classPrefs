@@ -42,14 +42,6 @@ Protected Class classPrefs
 		    
 		  End If
 		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
 		End Sub
 	#tag EndMethod
 
@@ -70,7 +62,6 @@ Protected Class classPrefs
 		  Catch Error As DatabaseException
 		    MessageBox Error.Message
 		  End Try
-		  
 		  
 		End Sub
 	#tag EndMethod
@@ -111,7 +102,6 @@ Protected Class classPrefs
 		  End If
 		  
 		  Return Picture.FromData(DecodeBase64(getValue(key, tmpDef)))
-		  
 		  
 		End Function
 	#tag EndMethod
