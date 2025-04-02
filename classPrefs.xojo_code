@@ -191,7 +191,11 @@ Protected Class classPrefs
 
 	#tag Method, Flags = &h0
 		Sub setPictureValue(key as string,value as Picture)
-		  SetValue(key, EncodeBase64(value.GetData(Picture.FormatPNG)))
+		  Var data As MemoryBlock = value.ToData(Picture.Formats.PNG)
+		  Var datastring As String = data.StringValue(0, data.Size)
+
+		  SetValue(key, EncodeBase64(datastring, 0))
+
 		End Sub
 	#tag EndMethod
 
